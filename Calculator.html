@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Calculator</h1>
+
+    <button onclick="add()">Add</button>
+
+    <button onclick="sub()">Subtract</button>
+
+    <button onclick="mul()">Multiply</button>
+
+    <button onclick="div()">Divide</button>
+
+    <p id="add"></p>
+
+    <p id="sub"></p>
+
+    <p id="mul"></p>
+
+    <p id="div"></p>
+
+    <script>
+
+        function add() {
+
+            var a = 5;
+
+            var b = 10;
+
+            var sum = a + b;
+
+            document.getElementById("add").innerHTML = "Sum: " + sum;
+
+        }
+
+        function sub() {
+
+            var a = 10;
+
+            var b = 5;
+
+            var difference = a - b;
+
+            document.getElementById("sub").innerHTML = "Difference: " + difference;
+
+        }
+
+        function mul() {
+
+            var a = 5;
+
+            var b = 10;
+
+            var product = a * b;
+
+            document.getElementById("mul").innerHTML = "Product: " + product;
+
+        }
+
+        function div() {
+
+            var a = 10;
+
+            var b = 5;
+
+            var quotient = a / b;
+
+            document.getElementById("div").innerHTML = "Quotient: " + quotient;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
