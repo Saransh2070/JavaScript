@@ -5,19 +5,20 @@
 </head>
 
 <body>
-    <button onclick="multiply(4)">Click Me!</button>
+    <button onclick="multiply(4,6)">Click Me!</button>
     <p id="result"></p>
     <script>
         function multiply(a, b) {
             if (b === undefined) {
                 alert("The value of b is undefined");
-                b = 5;
+                b=5;
+                return a*b;
             }
             var result = a * b;
-
+            document.getElementById("result").innerHTML = result;
+            return result;
         }
-        document.getElementById("result").innerHTML = result;
-  
+        
     </script>
 </body>
 
